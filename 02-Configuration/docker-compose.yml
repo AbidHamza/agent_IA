@@ -1,6 +1,8 @@
 services:
   n8n:
-    image: n8nio/n8n:latest
+    # Version pinnee pour assurer la reproductibilite pedagogique.
+    # Pour mettre a jour : testez d'abord avec n8nio/n8n:next avant de bumper la version.
+    image: n8nio/n8n:1.70.0
     container_name: n8n
     restart: unless-stopped
     ports:
